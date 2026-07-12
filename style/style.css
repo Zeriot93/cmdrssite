@@ -158,7 +158,7 @@ h1 {
 }
 
 .font-gold {
-    color: goldenrod;
+    color:goldenrod;
 }
 
 .font-white {
@@ -176,8 +176,10 @@ article {
 }
 
 p {
-    line: height 1.8em;
+    line-height: 1.3em;
 }
+
+
 
 footer {
     background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
@@ -190,3 +192,4 @@ footer {
     width: 100%;                  
     padding: 60px 20px;           
 }
+
