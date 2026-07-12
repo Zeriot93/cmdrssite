@@ -11,8 +11,8 @@ body {
     text-align:justify;
     border-style:solid;
     border-color:#15191E;
-    padding: 2px;   
-    border-radius: 0%;
+    padding: 1px;   
+    border-radius: 5%;
  }
 
 .barralink2 {
@@ -22,18 +22,28 @@ body {
     border-color:#15191E;
     padding: 2px;   
     border-radius: 0%;
-}
-table, th, td {
-  border: 0px solid;
-    border-collapse: separate;
-  border-spacing: 15px;
-  padding: 0px;
-  text-align:justify ;
-  background-color:#15191E;
-  margin: auto;
+    
   
 }
 
+ul{
+    display:flex;
+    gap: 10%;
+}
+li {
+      border: 1px solid;
+    border-collapse: separate;
+  border-spacing: 15px;
+  padding: 10px;
+  text-align:center ;
+  background-color:#15191E;
+margin-left:73px;
+  list-style-type: none;
+  position:relative;
+ width: 100px;
+
+ 
+}
 
 /* Il contenitore principale ora si sviluppa in verticale */
 .scheda-pilota-header {
@@ -148,7 +158,12 @@ header {
     width: 98.5%;                  
     padding: 0% 0.5%; 
 }
-
+.spaziatura {
+    margin-top: 100px;
+}
+.altezza {
+    height: 60px;
+}
 h1 {
     font-size: 3rem;
 }
@@ -193,3 +208,11 @@ footer {
     padding: 60px 20px;           
 }
 
+nav {
+  position: fixed; /* Blocca l'elemento nella pagina */
+  top: 0;          /* Lo fissa esattamente in alto */
+  left: 0;         /* Lo allinea al margine sinistro */
+  width: 100%;     /* Copre tutta la larghezza dello schermo */
+  z-index: 1000;   /* Lo mantiene sopra agli altri elementi */
+
+}
