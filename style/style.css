@@ -4,46 +4,10 @@ body {
         font-family: sans-serif;
 
     text-align: center;
+    padding-top: 70px; /* Regola questo valore in base all'altezza del tuo menu */
    
 }
-.barralink {
-    background-color: #d95d07;
-    text-align:justify;
-    border-style:solid;
-    border-color:#15191E;
-    padding: 1px;   
-    border-radius: 5%;
- }
 
-.barralink2 {
-    background-color: #d95d07;
-    text-align:justify;
-    border-style:solid;
-    border-color:#15191E;
-    padding: 2px;   
-    border-radius: 0%;
-    
-  
-}
-
-ul{
-    display:flex;
-    gap: 10%;
-}
-li {
-      border: 1px solid;
-    border-collapse: separate;
-  border-spacing: 15px;
-  padding: 10px;
-  text-align:center ;
-  background-color:#15191E;
-margin-left:73px;
-  list-style-type: none;
-  position:relative;
- width: 100px;
-
- 
-}
 
 /* Il contenitore principale ora si sviluppa in verticale */
 .scheda-pilota-header {
@@ -208,11 +172,70 @@ footer {
     padding: 60px 20px;           
 }
 
+* {
+  box-sizing: border-box;
+}
+
 nav {
-  position: fixed; /* Blocca l'elemento nella pagina */
-  top: 0;          /* Lo fissa esattamente in alto */
-  left: 0;         /* Lo allinea al margine sinistro */
-  width: 100%;     /* Copre tutta la larghezza dello schermo */
-  z-index: 1000;   /* Lo mantiene sopra agli altri elementi */
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  width: 100%;     
+  z-index: 1000;   
+}
+
+.barralink2 {
+  background-color: #d95e0780;
+  border-style: solid;
+  border-color: #15191E;
+  padding: 2px;   
+  border-radius: 0%;
+  
+  /* Usa Flexbox per centrare la barra interna */
+  display: flex;
+  justify-content: center;
+}
+
+.barralink {
+    margin-top: -4px;
+  background-color: #d95d07;
+  border-style: solid;
+  border-color: #15191E;
+  padding: 1px;   
+  border-radius: 50px; /* Corretto: le percentuali sui bordi arrotondati possono deformarli */
+  
+  /* Usa Flexbox per centrare la lista UL */
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Permette alla barra di usare lo spazio necessario */
+  max-width: 1200px; /* Impedisce alla barra di allargarsi all'infinito su schermi enormi */
+}
+
+ul {
+  display: flex;
+  list-style-type: none; /* Spostato qui per pulizia */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centra i li dentro l'ul */
+  gap: 20px; /* Spazio fisso e sicuro tra i li, non sborda mai */
+  width: 100%;
+  margin-top: 5px;
+}
+
+li {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  background-color: #15191E;
+  position: relative;
+  width: 100px;
+  height: 41px;
+  border-radius: 10%;
+  
+
+  /* Rimosso margin-left fisso che spingeva tutto a destra */
+  /* Rimosse le proprietà table (border-collapse, border-spacing) che non servivano */
+}
+ul li {
 
 }
