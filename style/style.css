@@ -103,7 +103,7 @@ body {
     /* Cambiato a 2px per renderlo più visibile */
     padding-bottom: 0px;
     /* Spazio tra il testo e la linea */
-    margin-bottom: -10%;
+    margin-bottom: 0%;
     /* Spazio tra la linea e il blocco successivo */
 }
 
@@ -188,7 +188,7 @@ nav {
   background-color: #d95e0780;
   border-style: solid;
   border-color: #15191E;
-  padding: 2px;   
+  padding: 0px;   
   border-radius: 0%;
   
   /* Usa Flexbox per centrare la barra interna */
@@ -200,12 +200,12 @@ background-origin: border-box;
 }
 
 .barralink {
-    margin-top: -4px;
+    margin-top: 0px;
 
   background-color: #d95d07;
   border-style: solid;
   border-color: #15191E;
-  padding: 1px;   
+  padding: 0px;   
   border-radius: 50px; /* Corretto: le percentuali sui bordi arrotondati possono deformarli */
   
   /* Usa Flexbox per centrare la lista UL */
