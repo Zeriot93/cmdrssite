@@ -1,11 +1,12 @@
 body {
     background-color: #15191E;
     color: #F1F5F9;
-        font-family: sans-serif;
+    font-family: sans-serif;
 
     text-align: center;
-    padding-top: 70px; /* Regola questo valore in base all'altezza del tuo menu */
-   
+    padding-top: 70px;
+    /* Regola questo valore in base all'altezza del tuo menu */
+
 }
 
 
@@ -14,21 +15,24 @@ body {
     background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
     border: 1px solid #C65D3B;
     border-left: 5px solid #C65D3B;
-    border-bottom: none !important; /* Rimuove sempre la linea sotto */
+    border-bottom: none !important;
+    /* Rimuove sempre la linea sotto */
     border-radius: 6px;
     padding: 20px;
-    margin: 15px 0; /* Lo allinea a sinistra (0 a destra), togliendo l'auto */
-    
+    margin: 15px 0;
+    /* Lo allinea a sinistra (0 a destra), togliendo l'auto */
+
     /* Cambiato da 1200px a 350px per farlo stretto e verticale */
-    max-width: 350px; 
+    max-width: 350px;
     font-family: 'Segoe UI', Roboto, sans-serif;
     color: #F1F5F9;
-    
+
     /* Dispone i 3 blocchi in verticale (uno sotto l'altro) */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Spazio tra un blocchetto e l'altro */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    gap: 15px;
+    /* Spazio tra un blocchetto e l'altro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Le singole colonne (ora righe verticali) */
@@ -59,7 +63,8 @@ body {
 /* Setup della lista dati interna alle colonne */
 .scheda-sezione dl {
     display: grid;
-    grid-template-columns: max-content 1fr; /* Adatta la prima colonna al testo */
+    grid-template-columns: max-content 1fr;
+    /* Adatta la prima colonna al testo */
     gap: 8px 15px;
     margin: 0;
     padding: 0;
@@ -78,14 +83,24 @@ body {
     margin: 0;
     font-size: 0.9rem;
     color: #F8FAFC;
-    text-align: right; /* Mantiene i dati puliti e allineati a destra */
+    text-align: right;
+    /* Mantiene i dati puliti e allineati a destra */
     font-weight: 600;
 }
 
 /* Dettagli estetici per i dati importanti */
-.evidenziato { color: #C65D3B !important; }
-.rango { color: #F59E0B !important; }
-.valuta { font-family: monospace; color: #10B981 !important; }
+.evidenziato {
+    color: #C65D3B !important;
+}
+
+.rango {
+    color: #F59E0B !important;
+}
+
+.valuta {
+    font-family: monospace;
+    color: #10B981 !important;
+}
 
 
 /* Regola dell'Opzione 1: aggiunge la linea sotto alla sezione */
@@ -112,22 +127,27 @@ body {
 header {
     text-align: center;
     color: goldenrod;
- background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
+    background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
     background-position: center;
-    background-repeat: no-repeat; /* Rimosso il punto finale errato */
-    background-size: cover;       /* Cambiato da 100vh a cover per coprire tutto */
+    background-repeat: no-repeat;
+    /* Rimosso il punto finale errato */
+    background-size: cover;
+    /* Cambiato da 100vh a cover per coprire tutto */
     background-attachment: fixed;
-    
+
     /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
-    width: 98.5%;                  
-    padding: 0% 0.5%; 
+    width: 98.5%;
+    padding: 0% 0.5%;
 }
+
 .spaziatura {
     margin-top: 100px;
 }
+
 .altezza {
     height: 60px;
 }
+
 h1 {
     font-size: 3rem;
 }
@@ -137,11 +157,16 @@ h1 {
 }
 
 .font-gold {
-    color:goldenrod;
+    color: goldenrod;
 }
 
 .font-white {
     color: #c7c7c7;
+}
+
+.font-superwhite {
+    color: #ffffff;
+
 }
 
 article {
@@ -163,87 +188,93 @@ p {
 footer {
     background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
     background-position: center;
-    background-repeat: no-repeat; /* Rimosso il punto finale errato */
-    background-size: cover;       /* Cambiato da 100vh a cover per coprire tutto */
+    background-repeat: no-repeat;
+    /* Rimosso il punto finale errato */
+    background-size: cover;
+    /* Cambiato da 100vh a cover per coprire tutto */
     background-attachment: fixed;
-    
+
     /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
-    width: 100%;                  
-    padding: 60px 20px;           
+    width: 100%;
+    padding: 60px 20px;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 nav {
-  position: fixed; 
-  top: 0;          
-  left: 0;         
-  width: 100%;     
-  z-index: 1000;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .barralink2 {
-  background-color: #d95e0780;
-  border-style: solid;
-  border-color: #15191E;
-  padding: 0px;   
-  border-radius: 0%;
-  
-  /* Usa Flexbox per centrare la barra interna */
-  display: flex;
-  justify-content: center;
-background-origin: border-box;
+    background-color: #d95e07;
+    border-style: solid;
+    border-color: #15191E;
+    padding: 0px;
+    border-radius: 0%;
 
+    /* Usa Flexbox per centrare la barra interna */
+    display: flex;
+    justify-content: left;
+    background-origin: border-box;
+    box-shadow: 0px 5px 10px #000000;
 
 }
 
 .barralink {
     margin-top: 0px;
-
-  background-color: #d95d07;
-  border-style: solid;
-  border-color: #15191E;
+    /* background-color: #d95d07;
+  /*border-style: solid;
+  /*border-color: #15191E;
   padding: 0px;   
   border-radius: 50px; /* Corretto: le percentuali sui bordi arrotondati possono deformarli */
-  
-  /* Usa Flexbox per centrare la lista UL */
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Permette alla barra di usare lo spazio necessario */
-  max-width: 1100px; /* Impedisce alla barra di allargarsi all'infinito su schermi enormi */
-     background-image: url('../img/navbar1.png');
-     background-position-x: center;
-     background-size:contain;
-     
 
-     
-     
+    /* Usa Flexbox per centrare la lista UL */
+    display: flex;
+    justify-content: left;
+    width: auto;
+    max-width: 1100px;
+    /* Impedisce alla barra di allargarsi all'infinito su schermi enormi */
+    /*background-image: url('../img/navbar1.png');*/
+    background-position-x: left;
+    background-size: contain;
+
+
+
+
 }
 
 ul {
-  display: flex;
-  list-style-type: none; /* Spostato qui per pulizia */
-  padding: 0;
-  margin: 0;
-  justify-content: center; /* Centra i li dentro l'ul */
-  gap: 20px; /* Spazio fisso e sicuro tra i li, non sborda mai */
-  width: 100%;
-  margin-top: 5px;
+    display: flex;
+    list-style-type: none;
+    /* Spostato qui per pulizia */
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    /* Centra i li dentro l'ul */
+    gap: 0px;
+    /* Spazio fisso e sicuro tra i li, non sborda mai */
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 li {
-  border: 1px solid;
-  padding: 10px;
-  text-align: center;
-  background-color: #15191E;
-  position: relative;
-  width: 100px;
-  height: 41px;
-  border-radius: 10%;
-  
+    margin-top: 3px;
+    border: 0px solid;
+    padding: 10px;
+    text-align: center;
+    /*background-color: #d95e0700; */
+    position: static;
+    font-weight: 900;
 
-  /* Rimosso margin-left fisso che spingeva tutto a destra */
-  /* Rimosse le proprietà table (border-collapse, border-spacing) che non servivano */
+}
+
+.margine-c {
+    margin: 0% 10%;
 }
