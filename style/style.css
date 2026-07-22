@@ -9,7 +9,16 @@ body {
 
 }
 
+nav>div>div>ul>li:hover{
+background-color: #FFAA46;
+font-size:1.0rem;
 
+}
+/*eliminazione sottolineatura link*/
+nav>div>div>ul>li>a{
+    border:0px solid yellow;
+text-decoration: none;
+}
 /* Il contenitore principale ora si sviluppa in verticale */
 .scheda-pilota-header {
     background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
@@ -261,17 +270,18 @@ ul {
     /* Spazio fisso e sicuro tra i li, non sborda mai */
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 li {
-    margin-top: 3px;
+    /* margin-top: 3px; */
     border: 0px solid;
     padding: 10px;
     text-align: center;
-    /*background-color: #d95e0700; */
+    /* background-color: #d95e0700; */
     position: static;
     font-weight: 900;
+    padding-top: 14px;
 
 }
 
