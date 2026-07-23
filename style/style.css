@@ -9,6 +9,20 @@ body {
 
 }
 
+#zelthariankid:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+#zeltharianado:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+
+#zeltharianadu:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+
 nav>div>div>ul>li:hover{
 background-color: #FFAA46;
 font-size:1.0rem;
@@ -19,6 +33,7 @@ nav>div>div>ul>li>a{
     border:0px solid yellow;
 text-decoration: none;
 }
+
 /* Il contenitore principale ora si sviluppa in verticale */
 .scheda-pilota-header {
     background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
@@ -69,7 +84,7 @@ text-decoration: none;
     margin-right: 5px;
 }
 
-/* Setup della lista dati interna alle colonne */
+/* =========== SCHEDA INIZIALE IN GAME ========== */
 .scheda-sezione dl {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -130,9 +145,50 @@ text-decoration: none;
     margin-bottom: 0%;
     /* Spazio tra la linea e il blocco successivo */
 }
+/*========== FINE SCHEDA INIZIALE===========*/
+/* =====nuovo bordo per biografie===== */
+.blocco-contenuto3 {
+    background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
+    border: 1px solid #C65D3B;
+    border-left: 5px solid #C65D3B;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 15px 0;
+    
+    /* MODIFICHE CHIAVE PER L'ADATTAMENTO */
+    display: inline-flex;       /* Stringe il box attorno al contenuto */
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;         /* Dice al box di essere largo quanto il suo contenuto */
+    max-width: 100%;            /* Impedisce al box di uscire dallo schermo su mobile */
+    
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #F1F5F9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      max-width: 700px;
+}
+
+/* Regola fondamentale per l'immagine all'interno delle nuove bio */
+.blocco-contenuto3 img {
+    max-width: 150px;           /* Imposta qui il limite massimo di larghezza dell'immagine */
+    width: 100%;                /* Permette all'immagine di rimpicciolirsi se lo schermo è stretto */
+    height: auto;               /* Mantiene le proporzioni corrette dell'immagine */
+    display: block;             /* Rimuove lo spazio vuoto indesiderato sotto l'immagine */
+    border-radius: 4px;         /* Opzionale: smussa gli angoli dell'immagine */
+}
+
+.commento-imgbio{
+    max-width: 9.5rem;
+    text-align: center;
+}
+
+.testo-imgbio{
+    text-align: justify;
+    font-size: 1.02rem;
+}
 
 
-
+/* fine css dedicato alle bio */
 header {
     text-align: center;
     color: goldenrod;
@@ -287,4 +343,40 @@ li {
 
 .margine-c {
     margin: 0% 10%;
+}
+
+/* teeeeeeeeeeeeeeeeest*/
+
+.bio-row{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:20px;
+    align-items:start;
+    margin-bottom:30px;
+}
+
+.bio-img{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.bio-testo{
+    display:flex;
+    align-items:flex-start;
+}
+
+.commento-imgbio{
+    margin-top:8px;
+    max-width:150px;
+    text-align:center;
+    font-size:.85rem;
+    color:#94A3B8;
+}
+
+.testo-imgbio{
+    margin:0;
+    text-align:justify;
+    font-size:1.02rem;
+    line-height:1.6;
 }
