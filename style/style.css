@@ -9,19 +9,6 @@ body {
 
 }
 
-#zelthariankid:hover{
-    scale: 1.01;
-    transition: 200ms;
-}
-#zeltharianado:hover{
-    scale: 1.01;
-    transition: 200ms;
-}
-
-#zeltharianadu:hover{
-    scale: 1.01;
-    transition: 200ms;
-}
 
 nav>div>div>ul>li:hover{
 background-color: #FFAA46;
@@ -170,11 +157,11 @@ text-decoration: none;
 
 /* Regola fondamentale per l'immagine all'interno delle nuove bio */
 .blocco-contenuto3 img {
-    max-width: 150px;           /* Imposta qui il limite massimo di larghezza dell'immagine */
-    width: 100%;                /* Permette all'immagine di rimpicciolirsi se lo schermo è stretto */
-    height: auto;               /* Mantiene le proporzioni corrette dell'immagine */
-    display: block;             /* Rimuove lo spazio vuoto indesiderato sotto l'immagine */
-    border-radius: 4px;         /* Opzionale: smussa gli angoli dell'immagine */
+    max-width: 284px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;       /* Opzionale: smussa gli angoli dell'immagine */
 }
 
 .commento-imgbio{
@@ -379,4 +366,106 @@ li {
     text-align:justify;
     font-size:1.02rem;
     line-height:1.6;
+}
+
+.timeline-biografia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.scheda-epoca {
+    flex: 1 1 300px;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(198, 93, 59, 0.2);
+    box-sizing: border-box;
+}
+
+
+.scheda-epoca .bio-row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.scheda-epoca .bio-img img {
+    width: 100%;
+    height: auto;
+}
+
+#zelthariankid:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+#zeltharianado:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+
+#zeltharianadu:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+
+#zeltharianadu1:hover{
+    scale: 1.01;
+    transition: 200ms;
+}
+
+.bio-row-adulto{
+    display:flex !important;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* contiene solo le due immagini */
+.bio-immagini-adulto{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+/* mantiene la stessa dimensione delle altre immagini */
+.bio-immagini-adulto .bio-img{
+    width:284px;
+}
+
+
+.bio-immagini-adulto .bio-img img{
+    width:100%;
+    height:auto;
+}
+
+
+
+@media(max-width:700px){
+
+    .bio-immagini-adulto{
+        display:contents;
+    }
+
+
+    .bio-row-adulto .bio-img:first-child{
+        order:1;
+    }
+
+
+    .bio-row-adulto .bio-testo{
+        order:2;
+    }
+
+
+    .bio-row-adulto .bio-img:last-child{
+        order:3;
+    }
+
 }
