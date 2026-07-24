@@ -403,20 +403,25 @@ li {
 #zelthariankid:hover{
     scale: 1.01;
     transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+
 }
 #zeltharianado:hover{
     scale: 1.01;
     transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
 #zeltharianadu:hover{
     scale: 1.01;
     transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
 #zeltharianadu1:hover{
     scale: 1.01;
     transition: 200ms;
+        box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
 .bio-row-adulto{
