@@ -10,15 +10,16 @@ body {
 }
 
 
-nav>div>div>ul>li:hover{
-background-color: #FFAA46;
-font-size:1.0rem;
+nav>div>div>ul>li:hover {
+    background-color: #FFAA46;
+    font-size: 1.0rem;
 
 }
+
 /*eliminazione sottolineatura link*/
-nav>div>div>ul>li>a{
-    border:0px solid yellow;
-text-decoration: none;
+nav>div>div>ul>li>a {
+    border: 0px solid yellow;
+    text-decoration: none;
 }
 
 /* Il contenitore principale ora si sviluppa in verticale */
@@ -132,6 +133,7 @@ text-decoration: none;
     margin-bottom: 0%;
     /* Spazio tra la linea e il blocco successivo */
 }
+
 /*========== FINE SCHEDA INIZIALE===========*/
 /* =====nuovo bordo per biografie===== */
 .blocco-contenuto3 {
@@ -141,18 +143,21 @@ text-decoration: none;
     border-radius: 6px;
     padding: 20px;
     margin: 15px 0;
-    
+
     /* MODIFICHE CHIAVE PER L'ADATTAMENTO */
-    display: inline-flex;       /* Stringe il box attorno al contenuto */
+    display: inline-flex;
+    /* Stringe il box attorno al contenuto */
     flex-direction: column;
     gap: 15px;
-    width: fit-content;         /* Dice al box di essere largo quanto il suo contenuto */
-    max-width: 100%;            /* Impedisce al box di uscire dallo schermo su mobile */
-    
+    width: fit-content;
+    /* Dice al box di essere largo quanto il suo contenuto */
+    max-width: 100%;
+    /* Impedisce al box di uscire dallo schermo su mobile */
+
     font-family: 'Segoe UI', Roboto, sans-serif;
     color: #F1F5F9;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      max-width: 700px;
+    max-width: 700px;
 }
 
 /* Regola fondamentale per l'immagine all'interno delle nuove bio */
@@ -161,15 +166,16 @@ text-decoration: none;
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 4px;       /* Opzionale: smussa gli angoli dell'immagine */
+    border-radius: 4px;
+    /* Opzionale: smussa gli angoli dell'immagine */
 }
 
-.commento-imgbio{
+.commento-imgbio {
     max-width: 9.5rem;
     text-align: center;
 }
 
-.testo-imgbio{
+.testo-imgbio {
     text-align: justify;
     font-size: 1.02rem;
 }
@@ -332,40 +338,40 @@ li {
     margin: 0% 10%;
 }
 
-/* teeeeeeeeeeeeeeeeest*/
+/* =====PARTE BIO======*/
 
-.bio-row{
-    display:grid;
-    grid-template-columns:170px 1fr;
-    gap:20px;
-    align-items:start;
-    margin-bottom:30px;
+.bio-row {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 30px;
 }
 
-.bio-img{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.bio-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bio-testo{
-    display:flex;
-    align-items:flex-start;
+.bio-testo {
+    display: flex;
+    align-items: flex-start;
 }
 
-.commento-imgbio{
-    margin-top:8px;
-    max-width:150px;
-    text-align:center;
-    font-size:.85rem;
-    color:#94A3B8;
+.commento-imgbio {
+    margin-top: 8px;
+    max-width: 150px;
+    text-align: center;
+    font-size: .85rem;
+    color: #94A3B8;
 }
 
-.testo-imgbio{
-    margin:0;
-    text-align:justify;
-    font-size:1.02rem;
-    line-height:1.6;
+.testo-imgbio {
+    margin: 0;
+    text-align: justify;
+    font-size: 1.02rem;
+    line-height: 1.6;
 }
 
 .timeline-biografia {
@@ -400,77 +406,130 @@ li {
     height: auto;
 }
 
-#zelthariankid:hover{
+#zelthariankid:hover {
     scale: 1.01;
     transition: 200ms;
     box-shadow: #D95E07 0px 0px 10px 0px;
 
 }
-#zeltharianado:hover{
+
+#zeltharianado:hover {
     scale: 1.01;
     transition: 200ms;
     box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
-#zeltharianadu:hover{
+#zeltharianadu:hover {
     scale: 1.01;
     transition: 200ms;
     box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
-#zeltharianadu1:hover{
+#zeltharianadu1:hover {
     scale: 1.01;
     transition: 200ms;
-        box-shadow: #D95E07 0px 0px 10px 0px;
+    box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
-.bio-row-adulto{
-    display:flex !important;
-    flex-direction:column;
-    gap:20px;
+.bio-row-adulto {
+    display: flex !important;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
 /* contiene solo le due immagini */
-.bio-immagini-adulto{
-    display:flex;
-    justify-content:center;
-    gap:20px;
+.bio-immagini-adulto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 
 /* mantiene la stessa dimensione delle altre immagini */
-.bio-immagini-adulto .bio-img{
-    width:284px;
+.bio-immagini-adulto .bio-img {
+    width: 284px;
 }
 
 
-.bio-immagini-adulto .bio-img img{
-    width:100%;
-    height:auto;
+.bio-immagini-adulto .bio-img img {
+    width: 100%;
+    height: auto;
 }
 
 
 
-@media(max-width:700px){
 
-    .bio-immagini-adulto{
-        display:contents;
+@media(max-width:700px) {
+
+    .bio-immagini-adulto {
+        display: contents;
     }
 
 
-    .bio-row-adulto .bio-img:first-child{
-        order:1;
+    .bio-row-adulto .bio-img:first-child {
+        order: 1;
     }
 
 
-    .bio-row-adulto .bio-testo{
-        order:2;
+    .bio-row-adulto .bio-testo {
+        order: 2;
     }
 
 
-    .bio-row-adulto .bio-img:last-child{
-        order:3;
+    .bio-row-adulto .bio-img:last-child {
+        order: 3;
     }
+
+}
+
+/* menu delle bio personaggi */
+#menubio {
+    border: 2px yellow solid;
+}
+
+.blocco-contenutobio {
+    background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
+    border: 1px solid #C65D3B;
+    border-left: 5px solid #C65D3B;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 15px 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 22rem;
+    /* max-width: 100%; */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #F1F5F9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+}
+
+#zbiomenutasto {
+    background-image: url(../img/zb3.jpg);
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: -174px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: #000000;
+    font-size: 1.3rem;
+    color: #ffbe6a;
+    box-shadow: inset 0 0 10px 0px gold;
+
+}
+
+#mbiomenutasto {
+    background-image: url(../img/mb4.png);
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: -174px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: #000000;
+    font-size: 1.3rem;
+    color: #ffbe6a;
+    box-shadow: inset 0 0 10px 0px gold;
 
 }
