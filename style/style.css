@@ -10,18 +10,8 @@ body {
 }
 
 
-nav>div>div>ul>li:hover {
-    background-color: #FFAA46;
-    font-size: 1.0rem;
 
-}
-
-/*eliminazione sottolineatura link*/
-nav>div>div>ul>li>a {
-    border: 0px solid yellow;
-    text-decoration: none;
-}
-
+/*! ==========SCHEDA PILOTA========== */
 /* Il contenitore principale ora si sviluppa in verticale */
 .scheda-pilota-header {
     background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
@@ -135,53 +125,8 @@ nav>div>div>ul>li>a {
 }
 
 /*========== FINE SCHEDA INIZIALE===========*/
-/* =====nuovo bordo per biografie===== */
-.blocco-contenuto3 {
-    background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
-    border: 1px solid #C65D3B;
-    border-left: 5px solid #C65D3B;
-    border-radius: 6px;
-    padding: 20px;
-    margin: 15px 0;
-
-    /* MODIFICHE CHIAVE PER L'ADATTAMENTO */
-    display: inline-flex;
-    /* Stringe il box attorno al contenuto */
-    flex-direction: column;
-    gap: 15px;
-    width: fit-content;
-    /* Dice al box di essere largo quanto il suo contenuto */
-    max-width: 100%;
-    /* Impedisce al box di uscire dallo schermo su mobile */
-
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    color: #F1F5F9;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    max-width: 700px;
-}
-
-/* Regola fondamentale per l'immagine all'interno delle nuove bio */
-.blocco-contenuto3 img {
-    max-width: 284px;
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    /* Opzionale: smussa gli angoli dell'immagine */
-}
-
-.commento-imgbio {
-    max-width: 9.5rem;
-    text-align: center;
-}
-
-.testo-imgbio {
-    text-align: justify;
-    font-size: 1.02rem;
-}
 
 
-/* fine css dedicato alle bio */
 header {
     text-align: center;
     color: goldenrod;
@@ -261,6 +206,20 @@ footer {
     box-sizing: border-box;
 }
 
+/*! ===========INIZIO NAVBAR=========== */
+
+nav>div>div>ul>li:hover {
+    background-color: #FFAA46;
+    font-size: 1.0rem;
+
+}
+
+/*eliminazione sottolineatura link*/
+nav>div>div>ul>li>a {
+    border: 0px solid yellow;
+    text-decoration: none;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -338,7 +297,57 @@ li {
     margin: 0% 10%;
 }
 
-/* =====PARTE BIO======*/
+/*? ===========FINE NAVBAR=========== */
+
+/*! ===============PARTE BIO================*/
+
+/* =====nuovo bordo per biografie===== */
+.blocco-contenuto3 {
+    background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
+    border: 1px solid #C65D3B;
+    border-left: 5px solid #C65D3B;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 15px 0;
+
+    /* MODIFICHE CHIAVE PER L'ADATTAMENTO */
+    display: inline-flex;
+    /* Stringe il box attorno al contenuto */
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+    /* Dice al box di essere largo quanto il suo contenuto */
+    max-width: 100%;
+    /* Impedisce al box di uscire dallo schermo su mobile */
+
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #F1F5F9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+}
+
+/* Regola fondamentale per l'immagine all'interno delle nuove bio */
+.blocco-contenuto3 img {
+    max-width: 284px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    /* Opzionale: smussa gli angoli dell'immagine */
+}
+
+.commento-imgbio {
+    max-width: 9.5rem;
+    text-align: center;
+}
+
+.testo-imgbio {
+    text-align: justify;
+    font-size: 1.02rem;
+}
+
+
+
 
 .bio-row {
     display: grid;
@@ -431,6 +440,31 @@ li {
     box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
+#moonkid:hover{
+        scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+
+#moonado:hover{
+        scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+
+#moonadu:hover{
+        scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+
+#moonadu1:hover{
+        scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+
+
 .bio-row-adulto {
     display: flex !important;
     flex-direction: column;
@@ -483,9 +517,20 @@ li {
 
 }
 
-/* menu delle bio personaggi */
+/*? ===============FINE PARTE BIO================*/
+
+/*! ======== menu delle bio personaggi ======== */
 #menubio {
-    border: 2px yellow solid;
+    border: 1px solid #C65D3B;
+    border-left: 5px solid #C65D3B;
+    margin: 0rem 7.3rem;
+    min-width: 451px;
+    max-width: 1421px;
+}
+#menubio:hover{
+        background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
+            transition: 200ms;
+
 }
 
 .blocco-contenutobio {
@@ -504,6 +549,7 @@ li {
     color: #F1F5F9;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     max-width: 700px;
+    min-width: 326px;
 }
 
 #zbiomenutasto {
@@ -520,6 +566,13 @@ li {
 
 }
 
+#zbiomenutasto:hover{
+        scale: 1.21;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+
+}
+
 #mbiomenutasto {
     background-image: url(../img/mb4.png);
     background-size: cover;
@@ -533,3 +586,16 @@ li {
     box-shadow: inset 0 0 10px 0px gold;
 
 }
+
+#mbiomenutasto:hover{
+        scale: 1.21;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+
+}
+
+.tastibiomenu {
+    margin: 13px 22px;
+}
+
+/*? ===========fine css dedicato alle bio=========== */
