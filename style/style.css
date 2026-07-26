@@ -523,9 +523,11 @@ li {
 #menubio {
     border: 1px solid #C65D3B;
     border-left: 5px solid #C65D3B;
-    margin: 0rem 7.3rem;
+    padding: 1rem;
+    margin: 4rem 7.3rem;
     min-width: 451px;
     max-width: 1421px;
+    display: inline-block;
 }
 #menubio:hover{
         background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
@@ -597,5 +599,6 @@ li {
 .tastibiomenu {
     margin: 13px 22px;
 }
+
 
 /*? ===========fine css dedicato alle bio=========== */
