@@ -469,6 +469,27 @@ li {
     box-shadow: #D95E07 0px 0px 10px 0px;
 }
 
+#liyahkid:hover {
+    scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+#liyahado:hover {
+    scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+#liyahadu:hover {
+    scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+#liyahadu1:hover {
+    scale: 1.01;
+    transition: 200ms;
+    box-shadow: #D95E07 0px 0px 10px 0px;
+}
+
 
 .bio-row-adulto {
     display: flex !important;
@@ -623,6 +644,7 @@ li {
 .tastibiomenu {
     margin: 13px 22px;
 }
+
 
 
 /*? ===========fine css dedicato alle bio=========== */
