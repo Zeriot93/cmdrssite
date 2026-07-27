@@ -5,9 +5,83 @@ body {
 
     text-align: center;
     padding-top: 70px;
+        max-width: 100%;
+    overflow-x: hidden;
     /* Regola questo valore in base all'altezza del tuo menu */
+}
+
+header {
+text-align: center;
+    color: goldenrod;
+    background-image: url(https://inara.cz/data/gallery/273/273696x1688.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 667px;
+    padding: 0% 0.5%;
+}
+
+footer {
+    background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Rimosso il punto finale errato */
+    background-size: cover;
+    /* Cambiato da 100vh a cover per coprire tutto */
+    background-attachment: fixed;
+
+    /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
+    width: 100%;
+        min-width: 667px;
+    padding: 60px 20px;
+}
+
+.spaziatura {
+    margin-top: 100px;
+}
+
+.altezza {
+    height: 60px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.font-red {
+    color: red;
+}
+
+.font-gold {
+    color: goldenrod;
+}
+
+.font-white {
+    color: #c7c7c7;
+}
+
+.font-superwhite {
+    color: #ffffff;
 
 }
+
+article {
+    text-align: justify;
+    padding: 10%;
+
+}
+
+.centrocentro {
+    text-align: center;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+
 
 a{
 
@@ -15,7 +89,18 @@ a{
     text-decoration: none;
 }
 
+.h1fixcel{
+    min-width: 667px;
+    padding: 0% 0.5%;
+}/*
+@media(max-width:700px) {
 
+    .h1fixcel{
+        min-width: 342px;
+    }
+
+}
+*/
 /*! ==========SCHEDA PILOTA========== */
 /* Il contenitore principale ora si sviluppa in verticale */
 .scheda-pilota-header {
@@ -132,80 +217,11 @@ a{
 /*========== FINE SCHEDA INIZIALE===========*/
 
 
-header {
-    text-align: center;
-    color: goldenrod;
-    background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Rimosso il punto finale errato */
-    background-size: cover;
-    /* Cambiato da 100vh a cover per coprire tutto */
-    background-attachment: fixed;
-
-    /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
-    width: 98.5%;
-    padding: 0% 0.5%;
-}
-
-.spaziatura {
-    margin-top: 100px;
-}
-
-.altezza {
-    height: 60px;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-.font-red {
-    color: red;
-}
-
-.font-gold {
-    color: goldenrod;
-}
-
-.font-white {
-    color: #c7c7c7;
-}
-
-.font-superwhite {
-    color: #ffffff;
-
-}
-
-article {
-    text-align: justify;
-    padding: 10%;
-
-}
-
-.centrocentro {
-    text-align: center;
-}
-
-p {
-    line-height: 1.3em;
-}
 
 
 
-footer {
-    background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Rimosso il punto finale errato */
-    background-size: cover;
-    /* Cambiato da 100vh a cover per coprire tutto */
-    background-attachment: fixed;
 
-    /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
-    width: 100%;
-    padding: 60px 20px;
-}
+
 
 * {
     box-sizing: border-box;
@@ -230,7 +246,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: stretch;
     z-index: 1000;
 }
 
@@ -266,9 +282,6 @@ nav {
     /*background-image: url('../img/navbar1.png');*/
     background-position-x: left;
     background-size: contain;
-
-
-
 
 }
 
@@ -318,8 +331,8 @@ li {
     /* display: inline-flex; */
     flex-direction: column;
     gap: 15px;
+    min-width: 665px;
     width: min-content;
-    /* width: 700px; */
     font-family: 'Segoe UI', Roboto, sans-serif;
     color: #F1F5F9;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
