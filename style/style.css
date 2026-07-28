@@ -19,24 +19,32 @@ text-align: center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-width: 667px;
+    min-width: 360px;
     padding: 0% 0.5%;
 }
-
+/*! ====== da rifare ====== */
+/*
 footer {
     background-image: url('https://inara.cz/data/gallery/273/273696x1688.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    /* Rimosso il punto finale errato */
     background-size: cover;
-    /* Cambiato da 100vh a cover per coprire tutto */
     background-attachment: fixed;
 
-    /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
     width: 100%;
-        min-width: 667px;
+    min-width: 360px;   
     padding: 60px 20px;
 }
+*/
+
+.divformfooter{
+        padding: 1rem;
+    margin: 4rem 7.3rem;
+    min-width: 451px;
+    max-width: 1421px;
+    display: inline-block;
+}
+
 
 .spaziatura {
     margin-top: 100px;
@@ -90,7 +98,7 @@ a{
 }
 
 .h1fixcel{
-    min-width: 667px;
+    min-width: 360px;
     padding: 0% 0.5%;
 }/*
 @media(max-width:700px) {
