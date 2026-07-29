@@ -665,10 +665,12 @@ li {
 }
 
 #dbiomenutasto{
-    /* background-image: url(../img/fb3.jpg); */
-    background-image: url(http://static.vecteezy.com/system/resources/thumbnails/002/207/866/small/digital-technology-lock-security-vector.jpg);
+    background-image: url(../img/db3.jpg);
+    /*background locked*/
+    /*background-image: url(http://static.vecteezy.com/system/resources/thumbnails/002/207/866/small/digital-technology-lock-security-vector.jpg);
+   */
     background-position-x: 0px;
-    background-position-y: -18px;
+    background-position-y: -40px;
 }
 
 #dbiomenutasto:hover{
